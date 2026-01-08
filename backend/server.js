@@ -15,7 +15,8 @@ const app = express();
 
 // 2. Middlewares
 app.use(cors({
-  origin: "https://aqoon-soor101.vercel.app", // URL-kaaga Vercel
+  origin: "https://aqoon-soor101.vercel.app", // URL-kaaga rasmiga ah
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());
