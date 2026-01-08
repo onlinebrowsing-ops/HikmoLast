@@ -15,7 +15,8 @@ const app = express();
 
 // 2. Middlewares
 app.use(cors({
-  origin: "https://hikmo-last.vercel.app", 
+  origin: "https://hikmo-last.vercel.app", // URL-ka saxda ah ee Vercel
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());
